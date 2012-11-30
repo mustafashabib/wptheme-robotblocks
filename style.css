@@ -1,0 +1,333 @@
+/*
+Theme Name: Robot Blocks
+Theme URI: http://mustafakidd.com/
+Description: The 2012 theme for Robot Blocks.
+Author: @mustafakidd
+Author URI: http://www.mustafakidd.com/
+Version: 1.0
+Tags: gray,one-column,flexible-width,custom-header
+
+License: gpl 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+*/
+html{
+	font-size:100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body{
+	background: #eee;
+	color: #454545;
+	font-family: "Antic Slab", serif;
+	margin: 0;
+	line-height: 1.65em;
+}
+
+a{
+	font-weight: bold;
+	color: rgb(115,174,174);
+	text-decoration: none;
+}
+
+a:hover{
+	color: rgb(92,139,139);
+	text-decoration: none;
+}
+
+h1{
+	font-size: 1.5em;
+	margin-bottom: .025em;
+}
+#wrapper{
+	width:55.555555555556%;
+	margin: auto;
+}
+
+div#wrapper>header{
+	width:100%;
+}
+div#wrapper>header>h1{
+	font-size:2.5em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: .75em;
+}
+img,
+object{
+	margin-bottom: .5em;
+	margin-left: auto;
+	margin-right:auto;
+	width: 100%; 
+	-webkit-border-radius: 1.625%;
+ 	-moz-border-radius: 1.625%;
+    border-radius: 1.625%;
+}
+div#wrapper>header>h1,
+article header h1{
+	font-family:  'Quicksand', Helvetica Neue, sans-serif;
+}
+header>h2{
+	font-size:.85em;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+div#wrapper>header:after{
+	content: "";
+	display: block;
+	border-bottom: solid 1px black;
+	width:100%;
+	height: 1px;
+	margin-top:1.5em;
+}
+header date{
+	font-size:.85em;
+}
+article>p{
+	font-size:1.0em;
+}
+
+line{
+    height: 2em;
+    border-top: solid 1px;
+    display: block;
+}
+div#wrapper>article{
+	margin-bottom: 2.75em;
+}
+
+div#icon{
+	border: solid; 
+	-webkit-border-radius: 15.625%;
+ 	-moz-border-radius: 15.625%;
+	position: absolute;
+	top: 1.0416667%;
+	left: 1.0416667%;
+	-webkit-transition: top .2s;
+	-moz-transition: top .2s;
+	-ms-transition: top .2s;
+	-o-transition: top .2s;
+	transition: top .2s;
+	width:45px;
+	height:45px;
+	z-index: 600;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+div#icon>a {
+	display: inline-block;
+	line-height: 1.875555em;
+	padding-left: .375em;
+	font-size: 1.5em;
+}
+
+div#mobile-banner{
+	display: none;
+}
+div#icon:hover{
+	background-color:rgba(51,51,50,0.5);
+}
+
+blockquote {
+	padding-top: 1em;
+	overflow: hidden; /* clearfix alternative */
+
+	color: #454545;
+}
+blockquote:before {
+	display: block;
+	float: left;
+	margin: 10px 15px 0 0;
+	font-size: 4em; 
+	content: open-quote;
+	color: #bababa;
+	text-shadow: 0 1px 1px #909090;
+}
+blockquote:after {
+	content: none;
+}
+nav{
+	text-align: center;
+	font-size: 1.5em;
+}
+nav.continue{
+	font-size:1em;
+	text-align: right;
+	display:block;
+}
+nav>prev{
+	float:left;
+}
+nav>next{
+	float:right;
+}
+
+ul.tags{
+	list-style: none;
+	font-style: italic;
+	display: block;
+}
+ul.tags>li{
+	display: inline;
+}
+
+ul.page-numbers{
+	float:right;
+	list-style: none;
+	font-style: italic;
+	display: block;
+}
+
+ul.page-numbers>li{
+	display:inline;
+}
+code
+{
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size:.85em;
+	line-height: 1.2em;
+	background-color: #bababa;
+	width: 90%;
+	display: block;
+    border-radius: 1em; /* just in case */
+    padding: 1em;
+    white-space: pre;
+    overflow: hidden;
+}
+
+div#icon>a:hover{
+	color: rgb(115,174,174);
+}
+
+div#wrapper>footer:before{
+	content: "";
+	display: block;
+	border-top: solid 1px black;
+	width:100%;
+	height: 1em;
+}
+div#wrapper>footer{
+	clear:both;
+	margin-top:1.5em;
+	text-align: center;
+	margin-bottom:1.5em;
+	display: block;
+}
+div#wrapper>footer ul{
+	list-style: none;
+}
+
+@media only screen and (max-device-width: 480px), (max-width: 600px) {
+	
+	#wrapper{
+		width: 90%;
+	}
+	h2{
+	 font-weight: normal;
+	}
+	
+	div#wrapper>header>h1{
+		font-weight: normal;
+	}
+
+	div#wrapper>header img{
+		display:none;
+	}
+
+	code{
+		max-width: 90%;
+		overflow: hidden;
+	}
+	a{
+	font-weight: normal;
+	}
+
+	a:hover{
+		color: rgb(92,139,139);
+	}
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: .5em 2em 2em 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: .5em auto .5em auto;
+}
+
+.alignright {
+    float:right;
+    margin: .5em 0 2em 2em;
+}
+
+.alignleft {
+    float: left;
+    margin: .5em 2em 2em 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: .5em auto .5em auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: .5em 0 2em 2em;
+}
+
+a img.alignnone {
+    margin: .5em 2.0em 2.0em 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: .5em 2.0em 2.0em 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: .5em .3em 1em;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: .5em 2em 2em 0;
+}
+
+.wp-caption.alignleft {
+    margin: .5em 2em 2em 0;
+}
+
+.wp-caption.alignright {
+    margin: .5em 0 2em 2em;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    margin: 0;
+    padding: 0 .4em .5em;
+}
+.sticky, .gallery-caption, .bypostauthor{}
